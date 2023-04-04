@@ -1,18 +1,26 @@
 #include "main.h"
 
 /**
- * print_chessboard - Entry point
- * @a: array
- * Return: Always 0 (Success)
- */
+  * print_chessboard - prints the shessboard
+  * @a: the 2 demontions array
+  *
+  * Return: void
+  */
 void print_chessboard(char (*a)[8])
 {
-	int i, n;
+	int i = 0;
+	int j = 0;
 
-	for (i = 0; i < 8; i++)
+	while (i < 8)
 	{
-		for (n = 0; n < 8; n++)
-			_putchar(a[i][n]);
+		while (j < 8)
+		{
+			_putchar(a[i][j]);
+			j++;
+		}
 		_putchar('\n');
+		j = 0;
+		i++;
 	}
 }
+
