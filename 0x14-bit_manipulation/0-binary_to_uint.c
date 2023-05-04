@@ -1,8 +1,15 @@
 #include "main.h"
+
+/**
+ * binary_to_uint - converts binary to int
+ * @b: pointer to str of 0 and 1 chars
+ * Return: converted number or NULL
+*/
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int bango = 0;
-	int hajimeru =0, l = 0;
+	int hajimeru = 0, l = 0;
 
 	if (b == NULL)
 		return (0);
